@@ -1,0 +1,128 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Times New Roman;
+}
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../farm1.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	font-family: Times New Roman;
+}
+ul{
+	/*float: right;*/
+	list-style-type: none;
+	
+}
+
+ul li{
+	float: left;
+	width: 140px;
+	font-size: 20px;
+	height: 70px;
+	line-height: 80px;
+	text-align: center;
+	
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	/*padding: 5px 20px;
+	border: 1px solid #fff;
+	transition: 0.6s ease;*/
+	transition: 0.6s all; 
+}
+
+ul li a:hover{
+	background-color: #008000;
+	color: #000;
+	transition: 0.6s all;
+}
+ul li.active a{
+	background-color: #fff;
+	color: #000;
+}
+/*.logo img{
+	float: left;
+	width: 100px;
+	height: auto;
+}*/
+
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.title{
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.title h1{
+	color: #000000;
+	font-size: 60px;
+	font-family: Ariel; 
+}
+
+
+/*.button{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.btn{
+	border: 1px solid #fff;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+}*/
+
+nav{
+	width: 100%;
+	height: 80px;
+	background: #447508;
+    box-shadow: rgba(0,0,0,0.2) 0 2px 6px 0;
+}
+
+/*.sec1{
+	width: 100%;
+	 height: 100vh;
+	 background: linear-gradient(135deg,#6e8efb,#a777e3);
+}
+
+.sec2{
+	width: 100%;
+	 height: 100vh;
+	 background: transparent linear-gradient(to right, rgb(248, 87, 166), rgb(255, 88, 88))repeat scroll 0% 0%;
+}*/
+
+ul li ul li{
+	display: none;
+	box-shadow: rgba(0,0,0,0.2) 0 2px 6px 0;
+	height: 60px;
+	transition: 1s all; 
+}
+
+ul li:hover ul li{
+	display: block;
+	transition: 1s all;
+	animation: drop 1s ease;
+
+}
+@keyframes drop{
+	0%{
+		transform: scale(2,2) rotatex(90deg);
+	}
+	100%{
+		transform: scale(1,1) rotatex(0deg);
+	}
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
