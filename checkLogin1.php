@@ -26,7 +26,7 @@ if($_SESSION["type"]=="admin")
 else 
     if($_SESSION["type"]=="user")
        {
-	header("Location:http://localhost/our project/our project/croppesticideinfo.php");
+	header("Location:http://localhost/croppesticideinfo.php");
        }              
 	?>
 	<script type="text/javascript"> 
