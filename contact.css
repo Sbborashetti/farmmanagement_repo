@@ -1,0 +1,115 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	font-family: sans-serif;
+}
+
+.container{
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+	height: 130%;
+}
+
+#contact-section{
+	background: linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.9)),url(../images/1.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	width: 100%;
+	padding: 2%;	
+}
+
+
+.contact-form i.fa{
+	font-size: 22px;
+	padding: 3%;
+	background-color: none;
+	margin: 2%;
+	border-radius: 80%;
+	cursor: pointer;
+	border: 2px solid rgb(190,190,190);
+	color: rgb(190,190,190);
+}
+
+
+
+.contact-form{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 5px;
+}
+
+.form-info{
+	font-size: 16px;
+	font-style: italic;
+	color: #000109;
+	letter-spacing: 2px;
+}
+
+input{
+	padding: 10px;
+	margin: 10px;
+	width: 70%;
+	background-color: rgba(136,133,133,0.5);
+	color: #000109;
+	border: none;
+	outline: none;
+}
+
+input:placeholder{
+	color: #051599;
+}
+
+textarea{
+	padding: 10px;
+	margin: 10px;
+	width: 70%;
+	height: 100%;
+	background-color: rgba(136,133,133,0.5);
+	color: #000109;
+	border: none;
+	outline: none;
+}
+
+textarea::placeholder{
+	color: #000109;
+
+}
+
+.submit{
+	width: 40%;
+	background: none;
+	padding: 4px;
+	outline: none;
+	font-size: 13px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 33px;
+	text-align: center;
+	cursor: pointer;
+	letter-spacing: 2px;
+	margin-left: 3%;
+	border: 2px solid rgb(190,190,190);
+	color: rgb(190,190,190);
+
+}
+
+.submit:hover{
+	border: 1px solid #fff;
+	color: #fff;
+	cursor: pointer;
+}
+
+/*media queries*/
+@media (max-width: 768px){
+	#contact-section .contact-form{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+	#contact-section .submit{
+		width: 60%;
+	}
+}
